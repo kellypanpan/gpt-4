@@ -1,0 +1,31 @@
+# Flux Kontext API Integration Configuration
+# Copy this content to a .env file and fill in your actual API keys
+
+# Server Configuration
+PORT=3000
+NODE_ENV=development
+
+# Choose your preferred AI provider (replicate, fal, or together)
+FLUX_PROVIDER=together
+
+# Replicate API Configuration (Option 1)
+# Get your API key from: https://replicate.com/account/api-tokens
+REPLICATE_API_TOKEN=your_replicate_api_token_here
+
+# Fal.ai API Configuration (Option 2)
+# Get your API key from: https://fal.ai/dashboard
+FAL_KEY=your_fal_ai_api_key_here
+
+# Together AI Configuration (Option 3 - Recommended)
+# Get your API key from: https://api.together.xyz/settings/api-keys
+TOGETHER_API_KEY=your_together_api_key_here
+
+# Additional Configuration
+MAX_FILE_SIZE_MB=10
+UPLOAD_DIR=uploads
+CLEANUP_INTERVAL_MINUTES=60
+
+# Security (for production)
+# JWT_SECRET=your_jwt_secret_here
+# RATE_LIMIT_WINDOW_MS=900000
+# RATE_LIMIT_MAX_REQUESTS=100 
